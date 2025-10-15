@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Experience | Restaurante Premium en Madrid</title>
+
+    <!-- Meta tags mejorados para SEO -->
+    <meta name="description"
+        content="Gourmet Experience: Restaurante premium en Madrid. Disfruta de una experiencia culinaria excepcional con ingredientes de alta calidad y ambiente sofisticado. Reserva tu mesa.">
+    <meta name="keywords" content="restaurante, gourmet, Madrid, alta cocina, reservas, comida premium">
+    <meta name="author" content="Gourmet Experience">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Gourmet Experience | Restaurante Premium en Madrid">
+    <meta property="og:description"
+        content="Disfruta de una experiencia culinaria excepcional con ingredientes de la más alta calidad en un ambiente sofisticado.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.gourmetexperience.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Preload para fuentes críticas -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap">
+    </noscript>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Schema.org mejorado -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Gourmet Experience",
+      "image": [
+        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+        "https://images.unsplash.com/photo-1555939594-58d7cb561ad1"
+      ],
+      "description": "Restaurante premium en Madrid especializado en experiencia culinaria gourmet con ingredientes de alta calidad.",
+      "servesCuisine": ["Gourmet", "Fusión", "Alta Cocina"],
+      "priceRange": "€€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Gourmet 123",
+        "addressLocality": "Madrid",
+        "postalCode": "28001",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.416775,
+        "longitude": -3.703790
+      },
+      "telephone": "+34-912-345-678",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "13:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "20:00",
+          "closes": "00:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "13:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "20:00",
+          "closes": "01:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "13:00",
+          "closes": "16:00"
+        }
+      ],
+      "menu": "#menu",
+      "acceptsReservations": "True",
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Carta Gourmet Experience",
+        "url": "#menu"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "124"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo" aria-label="Gourmet Experience - Inicio">
+                    <span class="logo-text">Gourmet<span>Experience</span></span>
+                </a>
+                <nav aria-label="Navegación principal">
+                    <ul id="navMenu">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#categories">Categorías</a></li>
+                        <li><a href="#menu">Carta</a></li>
+                        <li><a href="#gallery">Galería</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#reservations" class="btn btn-primary">Reservar</a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"
+                        aria-controls="navMenu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="home" aria-label="Sección principal">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Experiencia Gourmet Premium</h1>
+                <p>Disfruta de una experiencia culinaria excepcional con ingredientes de la más alta calidad y técnicas
+                    innovadoras en un ambiente sofisticado.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Ver Carta</a>
+                    <a href="#reservations" class="btn btn-secondary">Reservar Mesa</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Desplázate</span>
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-content" data-aos="fade-up">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="Chef preparando un plato gourmet con ingredientes frescos" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h2 id="about-title" class="section-title">Nuestra Filosofía</h2>
+                        <p>En Gourmet Experience, creemos que cada plato es una obra de arte. Nuestra misión es fusionar
+                            la tradición con la vanguardia, utilizando solo los ingredientes más frescos y de temporada.
+                            El Chef Ejecutivo, aclamado internacionalmente, diseña cada menú para despertar los sentidos
+                            y crear recuerdos inolvidables.</p>
+                        <p>Te invitamos a un viaje culinario donde la pasión por la alta cocina se encuentra en cada
+                            detalle, desde la meticulosa preparación hasta la elegante presentación.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-leaf"></i>
+                                <h3>Ingredientes Frescos</h3>
+                                <p>Seleccionamos los mejores productos locales y de temporada</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-star"></i>
+                                <h3>Calidad Premium</h3>
+                                <p>Cada plato es una experiencia única de sabor y texturas</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <h3>Atención Personalizada</h3>
+                                <p>Servicio excepcional para hacer de tu visita algo memorable</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories" id="categories" aria-labelledby="categories-title">
+            <div class="container">
+                <h2 id="categories-title" class="section-title" data-aos="fade-up">Nuestras Categorías</h2>
+                <div class="categories-grid">
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                                alt="Entradas gourmet" loading="lazy">
+                        </div>
+                        <div class="category-info">
+                            <h3>Entradas</h3>
+                            <p>Deliciosos aperitivos para comenzar tu experiencia</p>
+                            <a href="#menu" class="category-link">Ver opciones <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                                alt="Platos principales gourmet" loading="lazy">
+                        </div>
+                        <div class="category-info">
+                            <h3>Platos Principales</h3>
+                            <p>Nuestras especialidades culinarias</p>
+                            <a href="#menu" class="category-link">Ver opciones <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                                alt="Postres gourmet" loading="lazy">
+                        </div>
+                        <div class="category-info">
+                            <h3>Postres</h3>
+                            <p>Dulces creaciones para culminar tu experiencia</p>
+                            <a href="#menu" class="category-link">Ver opciones <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80"
+                                alt="Bebidas y cócteles premium" loading="lazy">
+                        </div>
+                        <div class="category-info">
+                            <h3>Bebidas</h3>
+                            <p>Selección premium de vinos y cócteles</p>
+                            <a href="#menu" class="category-link">Ver opciones <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu" aria-labelledby="menu-title">
+            <div class="container">
+                <h2 id="menu-title" class="section-title" data-aos="fade-up">Nuestra Carta</h2>
+                <div class="menu-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">Todo</button>
+                    <button class="filter-btn" data-filter="entradas">Entradas</button>
+                    <button class="filter-btn" data-filter="principales">Platos Principales</button>
+                    <button class="filter-btn" data-filter="postres">Postres</button>
+                    <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+                </div>
+                <!-- En la sección del menú, reemplaza el contenido actual de .menu-items con esto: -->
+<div class="menu-items" data-aos="fade-up">
+    <!-- ===== ENTRADAS ===== -->
+    <div class="menu-item" data-category="entradas">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Carpaccio de Res con Rúcula y Parmesano" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Carpaccio de Res</h3>
+                <span class="item-price">€22</span>
+            </div>
+            <p class="item-desc">Finas láminas de res marinadas en aceite de oliva y limón, acompañadas de rúcula fresca y lascas de queso parmesano.</p>
+            <div class="item-tags">
+                <span class="tag">Carne</span>
+                <span class="tag">Sin gluten</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="entradas">
+        <div class="item-img">
+            <img src="images/Tartasalmon.jpg" alt="Tartar de Salmón con Aguacate y Mango" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Tartar de Salmón</h3>
+                <span class="item-price">€24</span>
+            </div>
+            <p class="item-desc">Fresco salmón en cubos con un toque cítrico, servido sobre aguacate cremoso y dados de mango.</p>
+            <div class="item-tags">
+                <span class="tag">Pescado</span>
+                <span class="tag">Sin gluten</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="entradas">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Bruschettas de Queso de Cabra y Tomates Confitados" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Bruschettas Mediterráneas</h3>
+                <span class="item-price">€18</span>
+            </div>
+            <p class="item-desc">Pan artesanal con una mezcla de tomates dulces, albahaca y queso de cabra fundido.</p>
+            <div class="item-tags">
+                <span class="tag">Vegetariano</span>
+                <span class="tag">Mediterráneo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="entradas">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Crema de Espárragos Blancos con Trufa Negra" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Crema de Espárragos con Trufa</h3>
+                <span class="item-price">€20</span>
+            </div>
+            <p class="item-desc">Suave crema con aroma de trufa, servida con crujiente de jamón serrano.</p>
+            <div class="item-tags">
+                <span class="tag">Vegetariano</span>
+                <span class="tag">Gourmet</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="entradas">
+        <div class="item-img">
+            <img src="images/seviche.jpg" alt="Mini Ceviche de Camarón y Maracuyá" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Ceviche de Camarón</h3>
+                <span class="item-price">€23</span>
+            </div>
+            <p class="item-desc">Camarones marinados en jugo de limón y maracuyá con toque de cebolla morada y cilantro.</p>
+            <div class="item-tags">
+                <span class="tag">Mariscos</span>
+                <span class="tag">Sin gluten</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PLATOS PRINCIPALES ===== -->
+    <div class="menu-item" data-category="principales">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Lomo en Salsa de Vino Tinto con Puré de Papas Trufado" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Lomo en Salsa de Vino Tinto</h3>
+                <span class="item-price">€38</span>
+            </div>
+            <p class="item-desc">Filete de res sellado al punto, bañado en reducción de vino tinto con puré de papas trufado.</p>
+            <div class="item-tags">
+                <span class="tag">Carne Premium</span>
+                <span class="tag">Especialidad</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="principales">
+        <div class="item-img">
+            <img src="images/risoto.jpg" alt="Risotto de Setas y Parmesano" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Risotto de Setas</h3>
+                <span class="item-price">€26</span>
+            </div>
+            <p class="item-desc">Arroz arbóreo cremoso con champiñones silvestres y parmesano envejecido.</p>
+            <div class="item-tags">
+                <span class="tag">Vegetariano</span>
+                <span class="tag">Italiano</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="principales">
+        <div class="item-img">
+            <img src="images/Salmon.jpg" alt="Salmón Glaseado en Miel y Mostaza con Espárragos Verdes" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Salmón Glaseado</h3>
+                <span class="item-price">€32</span>
+            </div>
+            <p class="item-desc">Filete de salmón asado con una ligera capa de miel y mostaza Dijon, acompañado de espárragos verdes.</p>
+            <div class="item-tags">
+                <span class="tag">Pescado</span>
+                <span class="tag">Saludable</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="principales">
+        <div class="item-img">
+            <img src="images/Pato.jpg" alt="Magret de Pato con Salsa de Frutos Rojos" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Magret de Pato</h3>
+                <span class="item-price">€36</span>
+            </div>
+            <p class="item-desc">Pechuga de pato al punto medio, servida con una salsa agridulce de moras y vino tinto.</p>
+            <div class="item-tags">
+                <span class="tag">Aves</span>
+                <span class="tag">Especialidad</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="principales">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Raviolis de Langosta en Salsa de Azafrán" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Raviolis de Langosta</h3>
+                <span class="item-price">€42</span>
+            </div>
+            <p class="item-desc">Pasta rellena de langosta con crema ligera de azafrán y mantequilla.</p>
+            <div class="item-tags">
+                <span class="tag">Mariscos</span>
+                <span class="tag">Gourmet</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== POSTRES ===== -->
+    <div class="menu-item" data-category="postres">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Tarta de Chocolate Belga con Frambuesas Frescas" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Tarta de Chocolate Belga</h3>
+                <span class="item-price">€14</span>
+            </div>
+            <p class="item-desc">Bizcocho húmedo cubierto con ganache intenso y frambuesas naturales.</p>
+            <div class="item-tags">
+                <span class="tag">Chocolate</span>
+                <span class="tag">Clásico</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="postres">
+        <div class="item-img">
+            <img src="images/Cremabru.jpg" alt="Crème Brûlée de Vainilla Bourbon" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Crème Brûlée</h3>
+                <span class="item-price">€12</span>
+            </div>
+            <p class="item-desc">Tradicional crema francesa con costra caramelizada al momento, sabor vainilla bourbon.</p>
+            <div class="item-tags">
+                <span class="tag">Clásico</span>
+                <span class="tag">Francés</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="postres">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Cheesecake de Maracuyá y Coco" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Cheesecake Tropical</h3>
+                <span class="item-price">€13</span>
+            </div>
+            <p class="item-desc">Fusión tropical con base crocante y mousse ligera de maracuyá y coco.</p>
+            <div class="item-tags">
+                <span class="tag">Tropical</span>
+                <span class="tag">Sin horno</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="postres">
+        <div class="item-img">
+            <img src="images/Pistacho.jpg" alt="Mousse de Pistacho con Toque de Miel" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Mousse de Pistacho</h3>
+                <span class="item-price">€12</span>
+            </div>
+            <p class="item-desc">Suave mousse verde pastel con crocante de almendra y toque de miel.</p>
+            <div class="item-tags">
+                <span class="tag">Frutos secos</span>
+                <span class="tag">Texturas</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="postres">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1560008581-09826d1de69e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Helado Artesanal de Lavanda y Limón" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Helado de Lavanda</h3>
+                <span class="item-price">€10</span>
+            </div>
+            <p class="item-desc">Refrescante combinación floral elaborada con ingredientes naturales de lavanda y limón.</p>
+            <div class="item-tags">
+                <span class="tag">Artesanal</span>
+                <span class="tag">Floral</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== BEBIDAS ===== -->
+    <div class="menu-item" data-category="bebidas">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Limonada de Romero y Jengibre" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Limonada de Romero</h3>
+                <span class="item-price">€8</span>
+            </div>
+            <p class="item-desc">Refrescante y aromática, perfecta para acompañar comidas ligeras.</p>
+            <div class="item-tags">
+                <span class="tag">Sin alcohol</span>
+                <span class="tag">Refrescante</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="bebidas">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Cóctel de Frutos Rojos con Espumante" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Cóctel de Frutos Rojos</h3>
+                <span class="item-price">€12</span>
+            </div>
+            <p class="item-desc">Mezcla de frutos rojos frescos y vino espumoso.</p>
+            <div class="item-tags">
+                <span class="tag">Con alcohol</span>
+                <span class="tag">Frutal</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="bebidas">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Té Frío de Flor de Jamaica y Canela" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Té de Jamaica</h3>
+                <span class="item-price">€7</span>
+            </div>
+            <p class="item-desc">Dulce, especiado y con un color rubí intenso.</p>
+            <div class="item-tags">
+                <span class="tag">Sin alcohol</span>
+                <span class="tag">Infusión</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="bebidas">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Mocktail de Pepino, Limón y Menta" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Mocktail Refrescante</h3>
+                <span class="item-price">€9</span>
+            </div>
+            <p class="item-desc">Bebida sin alcohol elegante, servida con hielo picado.</p>
+            <div class="item-tags">
+                <span class="tag">Sin alcohol</span>
+                <span class="tag">Refrescante</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="bebidas">
+        <div class="item-img">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Café Espresso con Espuma de Avellana" loading="lazy">
+        </div>
+        <div class="item-info">
+            <div class="item-header">
+                <h3 class="item-name">Espresso Gourmet</h3>
+                <span class="item-price">€6</span>
+            </div>
+            <p class="item-desc">Espresso intenso con espuma aromatizada y toque gourmet de avellana.</p>
+            <div class="item-tags">
+                <span class="tag">Café</span>
+                <span class="tag">Energizante</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+            <div class="container">
+                <h2 id="gallery-title" class="section-title" data-aos="fade-up">Nuestra Galería</h2>
+                <div class="gallery-grid" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                            alt="Ambiente elegante del restaurante Gourmet Experience" loading="lazy">
+            </div>
+        </section>
+
+        <section class="reservations" id="reservations" aria-labelledby="reservations-title">
+            <div class="container" data-aos="fade-up">
+                <h2 id="reservations-title" class="section-title">Reserva tu Mesa</h2>
+                <div class="reservation-form">
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Fecha *</label>
+                                <input type="date" id="date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Hora *</label>
+                                <input type="time" id="time" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Número de comensales *</label>
+                            <select id="guests" class="form-control" required>
+                                <option value="">Selecciona...</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7">7 personas</option>
+                                <option value="8">8 personas</option>
+                                <option value="9+">9 o más personas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Notas adicionales (alergias, preferencias...)</label>
+                            <textarea id="notes" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn whatsapp-btn" id="whatsappBtn">
+                            <i class="fab fa-whatsapp"></i> Reservar por WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <h2 id="testimonials-title" class="section-title" data-aos="fade-up">Lo Que Dicen Nuestros Clientes</h2>
+                <div class="testimonials-slider" data-aos="fade-up">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Una experiencia culinaria excepcional. Cada plato es una obra de arte y el servicio es
+                                impecable. Sin duda, volveremos."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>María González</h4>
+                            <span>Cliente habitual</span>
+                        </div>
+                    </div>
+                    <!-- Más testimonios... -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="contact-title">Gourmet Experience</h3>
+                    <p>Restaurante premium en el corazón de Madrid, ofreciendo una experiencia culinaria única con
+                        ingredientes de la más alta calidad.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Síguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Síguenos en Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Gourmet 123, Madrid</li>
+                        <li><i class="fas fa-phone"></i> +34 912 345 678</li>
+                        <li><i class="fas fa-envelope"></i> info@gourmetexperience.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Horario</h4>
+                    <ul>
+                        <li>Lunes - Viernes: 13:00 - 16:00 / 20:00 - 00:00</li>
+                        <li>Sábados: 13:00 - 16:00 / 20:00 - 01:00</li>
+                        <li>Domingos: 13:00 - 16:00</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#menu">Nuestra Carta</a></li>
+                        <li><a href="#gallery">Galería</a></li>
+                        <li><a href="#about">Sobre Nosotros</a></li>
+                        <li><a href="#reservations">Reservas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Gourmet Experience. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="confirmationModal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <div class="modal-content">
+            <span class="close-button" aria-label="Cerrar modal">&times;</span>
+            <h2 id="modal-title">¡Gracias por tu Petición!</h2>
+            <p>Hemos abierto WhatsApp para que puedas enviarnos tu solicitud de reserva. Nuestro equipo la confirmará lo
+                antes posible.</p>
+            <p>Recuerda que tu reserva no está confirmada hasta que recibas una respuesta de nuestro equipo.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
